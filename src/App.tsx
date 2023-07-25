@@ -1,10 +1,10 @@
-import TodoList from "../src/react-query/TodoList.tsx";
+import PostList from "./react-query/PostList.tsx";
 
 function App() {
 
   return (
     <>
-      <TodoList />
+      <PostList />
     </>
   )
 }
