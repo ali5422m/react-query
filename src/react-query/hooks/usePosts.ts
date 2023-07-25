@@ -14,7 +14,7 @@ interface PostQuery {
     userId: number | undefined;
 }
 
-const usePosts = ( query: PostQuery ) => {
+const usePosts = (query: PostQuery) => {
     const fetchPosts = () =>
         axios
             .get<Posts[]>('https://jsonplaceholder.typicode.com/posts', {

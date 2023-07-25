@@ -1,10 +1,10 @@
-import PostList from "./react-query/PostList.tsx";
+import PostInfinitPagination from "./react-query/PostInfinitPagination.tsx";
 
 function App() {
 
   return (
     <>
-      <PostList />
+      <PostInfinitPagination />
     </>
   )
 }
