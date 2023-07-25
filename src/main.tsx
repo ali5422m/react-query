@@ -7,7 +7,20 @@ import App from './App.tsx'
 import './index.css';
 
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient(
+//     {
+//     defaultOptions:{
+//         queries:{
+//             retry: 3, // when url is wrong 3 times request running
+//             cacheTime: 300_000, //5min -> no component that using query , delete from catch after 5min
+//             staleTime: 10 * 1000, //10s  consider component refresh
+//             refetchOnWindowFocus: false,
+//             refetchOnReconnect: false,
+//             refetchOnMount: false
+//         }
+//     }
+// }
+);
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
