@@ -1,12 +1,14 @@
-import PostInfinitPagination from "./react-query/PostInfinitPagination.tsx";
+import TodoForm from "./react-query/TodoForm.tsx";
+import TodoList from "./react-query/TodoList.tsx";
 
 function App() {
 
-  return (
-    <>
-      <PostInfinitPagination />
-    </>
-  )
+    return (
+        <>
+            <TodoForm/>
+            <TodoList/>
+        </>
+    )
 }
 
 export default App
