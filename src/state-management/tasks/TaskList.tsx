@@ -1,10 +1,6 @@
-import useAuth from "../hooks/useAuth.ts";
-import {useContext} from "react";
-import TasksContext from "./taskContext.ts";
+import useAuth from "../auth/useAuth.ts";
+import useTasks from "./useTask.ts";
 
-
-
-const useTasks = () => useContext(TasksContext);
 const TaskList = () => {
     const {tasks, dispatch} = useTasks();
     const {user} = useAuth();
@@ -40,6 +36,4 @@ const TaskList = () => {
     );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
-export {useTasks};
 export default TaskList;
