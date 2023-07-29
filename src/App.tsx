@@ -2,6 +2,7 @@ import NavBar from "./state-management/NavBar.tsx";
 import TaskList from "./state-management/tasks/TaskList.tsx";
 import AuthProvider from "./state-management/auth/AuthProvider.tsx";
 import {TasksProvider} from "./state-management/tasks";
+import Counter from "./state-management/counter/Counter.tsx";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <>
             <AuthProvider>
                 <TasksProvider>
+                    <Counter />
                     <NavBar/>
                     <TaskList/>
                 </TasksProvider>
