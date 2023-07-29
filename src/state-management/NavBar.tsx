@@ -1,5 +1,5 @@
 import LoginStatus from "./LoginStatus.tsx";
-import useTasks from "./hooks/useTasks.ts";
+import {useTasks} from "./tasks/TaskList.tsx";
 
 const NavBar = () => {
     const {tasks} = useTasks();

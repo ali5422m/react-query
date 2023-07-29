@@ -1,4 +1,4 @@
-import {Task, TaskAction} from "../reducers/tasksReducer.ts";
+import {Task, TaskAction} from "./TasksProvider.tsx";
 import React, {Dispatch} from "react";
 
 interface TaskContextType {
