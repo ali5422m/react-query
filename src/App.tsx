@@ -1,12 +1,12 @@
 import TodoForm from "./react-query/TodoForm.tsx";
 import TodoList from "./react-query/TodoList.tsx";
-import Counter from "./state-management/Counter.tsx";
+import TaskList from "./state-management/TaskList.tsx";
 
 function App() {
 
     return (
         <>
-            <Counter />
+            <TaskList />
             <TodoForm/>
             <TodoList/>
         </>
