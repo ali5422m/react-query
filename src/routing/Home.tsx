@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 const Home = () => {
 
-    throw new Error("");
+    // throw new Error("");
 
     return (
         <>
