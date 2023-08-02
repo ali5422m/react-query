@@ -4,12 +4,14 @@ import ContactPage from "./ContactPage.tsx";
 import UserDetail from "./UserDetail.tsx";
 import Layout from "./Layout.tsx";
 import UsersPage from "./UsersPage.tsx";
+import ErrorPage from "./ErrorPage.tsx";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
+        errorElement: <ErrorPage />,
         children: [
             {path: '', element: <Home />},
             {path: 'contact', element: <ContactPage/>},
