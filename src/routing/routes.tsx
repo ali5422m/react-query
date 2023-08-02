@@ -9,15 +9,15 @@ import UsersPage from "./UsersPage.tsx";
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Layout/>,
+        element: <Layout />,
         children: [
-            {path: '', element: <Home/>},
+            {path: '', element: <Home />},
             {path: 'contact', element: <ContactPage/>},
             {
                 path: 'users',
-                element: <UsersPage/>,
+                element: <UsersPage />,
                 children: [
-                    {path: ':id', element: <UserDetail/>},
+                    {path: ':id', element: <UserDetail />},
                 ]
             },
         ]
