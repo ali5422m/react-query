@@ -1,6 +1,6 @@
 import {useLocation, useParams, useSearchParams} from "react-router-dom";
 
-const UserDetailPage = () => {
+const UserDetail = () => {
     const params = useParams();
     console.log(params);
     // har chi bad az users/ biayad ra midahad. manzoor hamoon id hast
@@ -17,9 +17,9 @@ const UserDetailPage = () => {
 
     return (
         <div>
-            User
+            User {params.id}
         </div>
     );
 };
 
-export default UserDetailPage;
+export default UserDetail;
