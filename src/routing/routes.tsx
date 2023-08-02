@@ -6,6 +6,7 @@ import Layout from "./Layout.tsx";
 import UsersPage from "./UsersPage.tsx";
 import ErrorPage from "./ErrorPage.tsx";
 import LoginPage from "./LoginPage.tsx";
+import PrivateRoutes from "./PrivateRoutes.tsx";
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
             {index: true, element: <Home />},
             {path: '/login', element: <LoginPage />},
             {path: 'contact', element: <ContactPage/>},
+        ]
+    },
+    {
+        element: <PrivateRoutes />,
+        children: [
             {
                 path: 'users',
                 element: <UsersPage />,
@@ -25,7 +31,7 @@ const router = createBrowserRouter([
                 ]
             },
         ]
-    },
+    }
 
 ]);
 
